@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cultural Heritage Explorer</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO SECTION -->
+<header class="hero">
+  <nav class="navbar">
+    <h2 class="logo">Akrithi</h2>
+    <ul>
+      <li>Tours</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <div class="hero-text">
+    <h1>Explore World’s Monuments<br>While At Home</h1>
+    <p>Discover India’s rich cultural heritage through monuments, traditions, and history.</p>
+    <button>Explore</button>
+  </div>
+</header>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <div class="card" onclick="openModal('Red Fort')">
+    <img src="images/redfort.jpg" alt="Red Fort">
+    <h3>Red Fort</h3>
+  </div>
+
+  <div class="card" onclick="openModal('Ancient Temples')">
+    <img src="images/temple.jpg" alt="Temple">
+    <h3>Ancient Temples</h3>
+  </div>
+
+  <div class="card" onclick="openModal('Festivals')">
+    <img src="images/festival.jpg" alt="Festival">
+    <h3>Festivals</h3>
+  </div>
+</section>
+
+<!-- HERITAGE INFO -->
+<section class="heritage-info">
+  <h2 class="section-title">Key Aspects of Indian Heritage</h2>
+
+  <div class="info-box">
+    <p><strong>🏛 Monuments & Architecture:</strong><br>
+      India has 44 UNESCO World Heritage Sites including the Red Fort, Qutub Minar,
+      Khajuraho temples, and Hampi ruins.
+    </p>
+
+    <p><strong>🕉 Spirituality & Religion:</strong><br>
+      Birthplace of Hinduism, Buddhism, Jainism, and Sikhism.
+    </p>
+
+    <p><strong>🎭 Cultural Traditions:</strong><br>
+      Ayurveda, Yoga, classical dance forms, traditional music, and festivals.
+    </p>
+
+    <p><strong>📜 Historical Legacy:</strong><br>
+      From the Indus Valley Civilization to modern India.
+    </p>
+  </div>
+</section>
+
+<!-- ✅ NEW FEEDBACK SECTION -->
+<section class="feedback">
+  <h2 class="section-title">Share Your Heritage Experience</h2>
+
+  <form id="feedbackForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Feedback" required></textarea>
+    <button type="submit">Submit Feedback</button>
+  </form>
+
+  <p id="responseMsg"></p>
+</section>
+
+<!-- MODAL -->
+<div id="modal">
+  <div class="modal-box">
+    <span onclick="closeModal()">×</span>
+    <h2 id="modalTitle"></h2>
+    <p>This monument represents India’s rich cultural and historical heritage.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
